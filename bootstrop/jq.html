@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>JQ</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style type="text/css">
+        .mylist{
+            padding: 5px;
+            margin: 20px 0;
+            border: 1px solid #0cc;
+            background-color: #fff;
+            box-shadow: 2px 2px 3px #0cc;
+        }
+        .aaa{
+            background: #f0f;
+        }   
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+            <div id="abc">           
+            </div>           
+        </div>
+
+        <div class="col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+            <button type="button" class="btn btn-info btn-block" id="more">加载更多。。。</button>
+        </div>
+    </div>
+</div>
+
+<div id="myModul" style="display:none;">
+    <div class="row mylist">
+        <div class="col-md-4 col-lg-4">
+            <img src="" class="img-responsive center-block myImg"></div>
+        <div class="col-md-8 col-lg-8">
+            <p class="myB"></p>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    var pagr =1;
+    var rows =10;
+    var id =2;
+    var listUrl ='http://www.tngou.net/api/lore/list';
+    var imgUrl='http://tnfs.tngou.net/image';
+    var modul=$('#myModul').html();
+    loadUrl(pagr,rows,id);
+
+    function loadUrl(pagr,rows,id) {
+        $.ajax({
+            type:"POST",
+            dataType: 'jsonp',
+            data:{
+                page: pagr,
+                rows: rows,
+                id:id
+            },
+            url: listUrl,
+            success: function(data){
+                var arr =data.tngou;
+                for (var i = 0; i < arr.length; i++) {
+                    $('#abc').append(modul);
+                    var item=i+(pagr-1)*rows;
+                    /*alert("i ="+i +"item ="+item);*/
+                    loadText(arr[i].title,item);
+                    loadImg(arr[i].img,item);
+                }
+            }
+        });
+    }
+    function loadText(title,i) {
+        $('.myB').eq(i).append(title);
+    }
+    function loadImg(path,i) {
+        $('.myImg').eq(i).attr("src",imgUrl+path+'_180x120');    
+    }
+   $('#more').click(function() {
+       pagr++;
+       loadUrl(pagr,rows,id);
+    });
+
+ 
+</script>
+</body>
+</html>

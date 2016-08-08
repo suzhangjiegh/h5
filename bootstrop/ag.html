@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>angular2</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	</head>
+	<style type="text/css">
+		h1{background:black;color:white;display:inline-block}
+	</style>
+</head>
+<body>
+	<div style="background:#f00;">
+		<h1>Hello</h1>
+		<h1>Hello</h1>
+		<h1>Hello</h1>
+	</div>
+
+	<!--组件渲染锚点-->
+	<ez-app></ez-app>	
+
+
+	
+	<script type="text/javascript" src="js/angular2.beta.stack.min.js"></script>
+	<script type="text/typescript">
+	    import {Component} from "angular2/core";
+	    import {bootstrap} from "angular2/platform/browser";
+
+	    /*@Component({
+	        selector : "ez-app",
+	     	properties:["name","country"],
+	        template : `
+	        <h1 class="abc">Hello</h1><br>
+			<h1>Hello{{name}}</h1><br>
+			<h1>Hello{{country}}</h1><br>
+			<input type="" name="">
+			<button>提交</button>
+	        `
+	    })
+	    class EzApp{
+	    	constructor(){
+				this.name = "Mike";
+				this.country = "Sweden";
+			}
+	    }
+	    bootstrap(EzApp);*/
+
+	    @Component({
+			selector:"ez-app",
+			template:`	
+		    	<h1 [ngStyle]="styles">EZ-APP</h1>
+			`
+		})
+		class EzApp{
+			constructor(){
+		    	this.styles = {
+		        	color : "#0f0",
+		            backgroundColor : "black",
+		            fontStyle : "italic",
+		            textAlign : "center"
+		        };
+		    }
+		}
+				
+		bootstrap(EzApp);
+	    
+	</script>
+
+</body>
+</html>

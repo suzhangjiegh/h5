@@ -1,0 +1,314 @@
+@charset "utf-8";
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+}
+a:focus {
+	outline: none;
+}
+<<<<<<< HEAD
+<<<<<<< HEAD
+.abc{
+	height: 60px;
+	background: #0f0;
+}
+=======
+>>>>>>> 201ce68d4707ea748f624470f0e4712fa61826ad
+=======
+>>>>>>> 201ce68d4707ea748f624470f0e4712fa61826ad
+.list-group a {
+	color: #0059b2;
+}
+.aa{
+	background: #f0f;
+	text-align: center;
+}
+
+.navbar-brand {
+	padding:0;
+}
+#myCarousel {
+	margin:50px 0 30px 0;
+}
+.carousel-inner .item img {
+	margin: 0 auto;
+}
+
+.tab1 .text-muted {
+	color: #999;
+	text-decoration: line-through;
+}
+.tab1,.tab2,.tab3 {
+	margin: 30px 0;
+	color: #666;
+}
+.tab1 .col {
+	padding: 20px;
+}
+.tab1 .media-heading {
+	margin: 5px 0 20px 0;
+}
+.tab1 .text-muted {
+	color: #999;
+	text-decoration: line-through;
+}
+.tab-h2{
+	font-size: 20px;
+	color:#0059B2 ;
+	text-align: center;
+	letter-spacing: 1px;
+}
+.tab-p {
+	font-size: 15px;
+	color: #999;
+	text-align: center;
+	letter-spacing: 1px;
+	margin: 20px 0 40px 0;
+}
+.tab2 {
+	background: #eee;
+	padding: 60px 20px;
+	text-align: center;
+}
+.tab2 img {
+	width: 40%;
+	height: 40%;
+}
+.text h3 {
+	font-size: 20px;
+}
+.text p {
+	font-size: 14px;
+}
+.tab2-img {
+	float: right;
+}
+.tab2-text {
+	float: left;
+}
+.tab3 {
+	padding: 40px 0;
+	text-align: center;
+}
+.tab3 img {
+	width: 65%;
+	height: 65%;
+}
+
+#footer {
+	padding: 20px;
+	text-align: center;
+	background-color: #666;
+	border-top: 1px solid #ccc;
+	color: #ccc;
+}
+
+
+.jumbotron{
+	color: #ccc;
+	margin-top: 50px;
+	padding: 60px 0 ;
+	background: url(../img/bg.jpg);
+}
+/*第二个界面*/
+#information {
+	padding: 40px 0;
+	background: #eee;
+}
+.info-content {
+	border: 1px solid #0cc;
+	background-color: #fff;
+	box-shadow: 2px 2px 3px #0cc;
+	margin: 0 0 20px 0;
+}
+.info-content img {
+	 margin: 12px 0;
+}
+.info-content h4 {
+	font-size: 14px;
+	padding: 2px 0 0 0;
+}
+.info-content p {
+	line-height: 1.6;
+	color: #666;
+}
+.info-right {
+	background-color: #fff;
+	border: 1px solid #0cc;
+	background-color: #fff;
+	box-shadow: 2px 2px 3px #0cc;
+}
+.info-right blockquote {
+	padding: 0;
+	margin: 0;
+}
+.info-right h2 {
+	font-size: 20px;
+	padding: 5px;
+}
+.info-right h4 {
+	line-height: 1.6;
+}
+
+#case {
+	padding: 40px 0;
+	text-align: center;
+	background-color: #eee;
+}
+#case h4 {
+	color: #666;
+}
+#case p {
+	color: #666;
+	line-height: 1.6;
+}
+#case .col {
+	margin: 0 0 20px 0;
+}
+
+#about {
+	padding: 40px 15px;
+	background-color: #eee;
+}
+#about .about {
+<<<<<<< HEAD
+<<<<<<< HEAD
+	
+=======
+	background-color: #fff;
+>>>>>>> 201ce68d4707ea748f624470f0e4712fa61826ad
+=======
+	background-color: #fff;
+>>>>>>> 201ce68d4707ea748f624470f0e4712fa61826ad
+	border: 1px solid #0cc;
+	background-color: #fff;
+	box-shadow: 2px 2px 3px #0cc;
+	padding-bottom: 20px;
+}
+#about h3 {
+	margin: 0 0 10px 0;
+	padding: 20px 0;
+	border-bottom: 1px solid #eee;	
+	font-size: 18px;
+}
+#about p {
+	line-height: 2;
+	font-size: 13px;
+}
+@media (min-width: 768px) {
+	.tab-h2 {
+		font-size: 26px;
+	}
+	.tab-p {
+		font-size: 16px;
+	}
+	.text h3 {
+		font-size: 22px;
+	}
+	.text p {
+		font-size: 15px;
+	}
+	.tab2-text {
+		float: left;
+	}
+	.tab2-img {
+		float: right;
+	}
+	.jumbotron h1 {
+		font-size: 30px;
+	}
+	.jumbotron h4 {
+		font-size: 16px;
+	}
+	.info-content h4 {
+		font-size: 16px;
+
+	}
+	.info-right h4 {
+		font-size: 14px;
+	}
+	#about h3 {
+		font-size: 19px;
+	}
+	#about p {
+		font-size: 14px;
+	}
+}
+@media (min-width: 992px) {
+	.tab-h2 {
+		font-size: 28px;
+	}
+	.tab-p {
+		font-size: 17px;
+	}
+	.text h3 {
+		font-size: 24px;
+	}
+	.text p {
+		font-size: 16px;
+	}
+	.tab2-text {
+		float: left;
+	}
+	.tab2-img {
+		float: right;
+	}
+	.jumbotron h1 {
+		font-size: 33px;
+	}
+	.jumbotron h4 {
+		font-size: 17px;
+	}
+	.info-content h4 {
+		font-size: 18px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.info-right h4 {
+		font-size: 14px;
+	}
+	#about h3 {
+		font-size: 20px;
+	}
+	#about p {
+		font-size: 15px;
+	}
+}
+@media (min-width: 1200px) {
+	.tab-h2 {
+		font-size: 30px;
+	}
+	.tab-p {
+		font-size: 18px;
+	}
+	.text h2 {
+		font-size: 26px;
+	}
+	.text p {
+		font-size: 18px;
+	}
+	.tab2-text {
+		float: left;
+	}
+	.jumbotron h1 {
+		font-size: 36px;
+	}
+	.jumbotron h4 {
+		font-size: 18px;
+	}
+	.info-content h4 {
+		font-size: 20px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.info-right h4 {
+		font-size: 16px;
+	}
+	#about h3 {
+		font-size: 21px;
+	}
+	#about p {
+		font-size: 16px;
+	}
+}
