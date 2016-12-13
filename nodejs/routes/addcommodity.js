@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-router.get('/',function (req, res) {
+router.get('/addcommodity',function (req, res) {
 	if (req.session.user) {
  		 res.render('addcommodity');	
  	}else{
@@ -10,7 +10,7 @@ router.get('/',function (req, res) {
  	}
 });
 
-router.post('/',function (req, res) {
+router.post('/addcommodity',function (req, res) {
 	if (req.session.user) {
  		var Commodity = global.dbHelper.getModel('commodity');
 

@@ -1,9 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-router.get('/', function(req, res, next) {
-	   
-	   console.log("uesr="+req.session.user);
+router.get('/home', function(req, res, next) {
  	if (req.session.user) {
  		var Commodity=global.dbHelper.getModel('commodity');
  		Commodity.find({},function (err,doc) {

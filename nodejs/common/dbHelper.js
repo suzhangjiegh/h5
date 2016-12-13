@@ -1,6 +1,6 @@
-var mongoose = require('mongoose'),
-    Schema = mongoose.Schema,
-    models = require('./models');
+var mongoose = require('mongoose');
+var models = require('./models');
+var Schema = mongoose.Schema;
 
 
 /*创建模型并集合关联*/

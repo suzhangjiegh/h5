@@ -26,8 +26,7 @@ router.post('/login', function(req, res, next) {
 	       res.send(404);   
 	   }else{
 	       req.session.user=doc;
-	       res.send(200);
-      
+	       res.send(200);  
 	   }
   	}
   });

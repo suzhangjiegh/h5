@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-router.get('/',function (req, res) {
+router.get('/cart',function (req, res) {
 	if (!req.session.user) {
 		req.session.error="用户已过期，请重新登录";
  		res.redirect('/login');
@@ -15,7 +15,7 @@ router.get('/',function (req, res) {
  	}
 });
 
-router.get('/addToCart/:id',function (req, res) {
+router.get('/cart/addToCart/:id',function (req, res) {
 	console.log("添加商品=addToCart");
 	if (!req.session.user) {
 		req.session.error="用户已过期，请重新登录";
