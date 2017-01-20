@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>dd</title>
+<style type="text/css">
+.abc {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 200px;
+    background: #f00;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    position: relative
+}
+
+.abc:hover >.bottom {
+    -webkit-animation: divan 2s;
+    -o-animation: divan 2s;
+    animation: divan 2s;
+    left: 0px;
+    width: 200px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    width: 0px;
+    height: 4px;
+    background: #0f0;
+}
+@keyframes divan {
+    from {
+    	left: 100px;
+    	width: 0px;
+     
+    }
+    to {
+        left: 0px;
+        width: 200px;
+        
+    }
+}
+
+.bbb{
+	margin: 10px 0 0 0 ;
+    padding: 0;
+    height: 500px;
+    width: 500px;
+    background: #f00;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+  /*   -webkit-animation: bccc 5s ease 0 1 alternate running;
+  -o-animation: bccc 5s ease 0 1 alternate running; */
+  
+}
+.ccc{
+	animation-name: bccc;
+	animation-duration: 5s;
+	animation-timing-function: cubic-bezier(.83,.44,.13,.7);
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-play-state: running;
+	position: absolute;
+	left: 5px;
+	top: 5px;  
+	width: 30px;
+	height: 30px;
+	border-radius:50% ;
+	background: #00f;
+}
+@keyframes bccc {
+    from {
+		left: 5px;
+		top: 5px;  
+    }
+    to {
+        left: 450px;
+		top: 450px;      
+    }
+}
+.eee{
+	animation-name: cccc;
+	animation-duration: 5s;
+	animation-timing-function: cubic-bezier(.83,.44,.13,.7);
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-play-state: running;
+	position: absolute;
+	left: 5px;
+	top: 5px;  
+	width: 30px;
+	height: 30px;
+	border-radius:50% ;
+	background: #00f;
+}
+@keyframes cccc {
+    from {
+		left: 5px;
+		top: 5px;  
+    }
+    to {
+        left: 450px;
+		top: 5px;      
+    }
+}
+
+.frame-block {
+    position: relative;
+    display: block;
+    height:335px;
+    width: 575px;
+}
+.frame-block span {
+    background: url(./img/07.png) no-repeat center top;
+    height:335px;
+    width: 575px;
+    display: block;
+    position: absolute;
+}
+
+.transp-block {
+    background: #000 url(./img/07.png) no-repeat;
+    width: 575px;
+    height: 335px;
+}
+img.transparent {
+    filter:alpha(opacity=75);
+    opacity:.75;
+}
+.img-desc {
+    position: relative;
+    display: block;
+    height:335px;
+    width: 575px;
+}
+.img-desc cite {
+    background: #111;
+    filter:alpha(opacity=55);
+    opacity:.55;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 555px;
+    padding: 10px;
+    border-top: 1px solid #999;
+}
+</style>
+
+
+
+</head>
+<body>
+<!-- 动画
+<div class="abc">
+		hh
+		<div class="bottom"></div>
+</div> 
+-->
+<!-- 动画	
+<div class="bbb">
+	<div class="ccc"></div>
+</div> 
+-->
+<!-- 动画	
+<div class="bbb">
+	<div class="eee"></div>
+</div> 
+-->
+
+<!-- 图片外框效果 这个效果是基于在上面层叠一个有透明度的图片的技术。至于IE6的PNG透明度问题
+<div class="frame-block">
+    <span> </span>
+    <img src="./img/5.png" alt="" />
+</div> 
+-->
+<!--  4，水印效果
+你可以通过降低主图片的透明度来让背景图片透过来显示的方法添加水印。
+<div class="transp-block">
+   <img class="transparent" src="./img/5.png" alt="" />
+</div>  -->
+<!-- 5，为图片添加说明文字
+使用绝对定位和透明度的设置来添加灵活的说明。
+<div class="img-desc">
+    <img src="./img/5.png" alt="" />
+    <cite>Salone del mobile Milano, April 2008 - Peeta</cite>
+</div>
+ -->
+</body>
+</html>
