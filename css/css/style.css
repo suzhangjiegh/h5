@@ -1,0 +1,288 @@
+@charset "utf-8";
+/* PC移动端都可用*/
+html{
+	font-size: 625%;
+}
+body,h1,h2,h3,p,ul,ol,form,fieldset,figure{
+	margin: 0;
+	padding:0;
+
+
+}
+body{
+	background-color:#fff;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei UI","Microsoft Yahei",SimHei,"\5B88\4F53",simsun,sans-serif;
+	font-size: 0.16rem;
+}
+ul,ol{
+	list-style: outside none none;
+}
+/* 取消下划线*/
+a{
+	text-decoration: none;
+}
+img{
+	display: block;
+	width: 100%;
+}
+div,figure,figcaption{
+	box-sizing:border-box;
+}
+.none {
+	display: none;
+}
+.clearfix:after{
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+#header{
+	width: 100%;
+	height: 0.45rem;
+	background: #333;
+	font-size: 0.16rem;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+}
+#header .link{
+	height: .45rem;
+	line-height: .45rem;
+	color: #eee;
+}
+#header .link li{
+	width:  25%;
+	text-align: center;
+	float: left;
+}
+#header .link a{
+	color: #eee;
+	display: block;
+}
+#header .link a:hover,
+#header .activie a{
+	background-color: #000;
+}
+
+#adver{
+	padding: .45rem 0 0 0;
+	max-width: 6.4rem;
+	width: 100%;
+	margin: 0 auto;
+
+}
+#footer{
+	max-width: 6.4rem;
+	color: #777;
+	background-color:#222;
+	margin: 0 auto;
+	text-align: center;
+	padding: .1rem 0;
+
+}
+#footer .top{
+	padding: 0 0 .05rem 0;
+}
+#search{
+	max-width: 6.4rem;
+	height: .33rem;
+	margin: 0 auto;
+	background-color: #ddd;
+	padding: .03rem 0 0 0;
+	position: relative;
+}
+#search .search{
+	display: block;
+	outline: none;
+	width: 95%;
+	font-size: .14rem;
+	border-radius: .04rem;
+	background-color: #fff;
+	border: none;
+	height: .27rem;
+	padding: 0 .05rem;
+	display: block;
+	margin: 0 auto;
+
+
+}
+#search .button{
+	display: block;
+	outline: none;
+	position: absolute;
+	top: .03rem;
+	right: 1%;
+	 background-color: #eee;
+	cursor: pointer;
+	color: #666;
+	width: .5rem;
+	height: .27rem;
+	border: none;
+	border-top-right-radius: .04rem;
+	border-bottom-right-radius: .04rem;
+	font-size: .14rem;  
+}
+#tour{
+	max-width: 6.4rem;
+	margin:  .1rem auto;
+
+}
+#tour h2{
+	text-align: center;
+	color: #666;
+}
+#tour h3{
+	text-align: center;
+	color: #666;
+	font-weight: normal;
+	margin: .05rem 0 .1rem 0;
+}
+#tour figure{
+	float: left;
+	width: 50%;
+	font-size: .16rem;
+	background-color: #eee;
+	padding: 0 0 .05rem 0;
+
+}
+#tour figure img{
+	padding: .02rem;
+	border-radius: .04rem;
+}
+#tour figcaption{
+	color: #666;
+	font-size: .16rem;
+	padding:  .02rem .05rem;
+}
+#tour h4{
+	font-weight: normal;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#tour p{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis; /* 如果半截子就用。。。 */
+
+}
+#tour .info{
+	padding:  .1rem 0 0 0;
+	font-size: .16rem;
+}
+#tour .price{
+	color: #f60;
+}
+#tour .price strong{
+	letter-spacing: 0.01rem;
+}
+#tour .sat{
+	color: #999;
+	font-style: normal;
+	float: right;
+	position: relative;
+	right: 0.05rem;
+}
+
+/* 第二个界面 */
+#headline{
+	max-width: 6.4rem;
+
+	margin: 0 auto ;
+	padding: .45rem 0 0 0;
+	position: relative;
+}
+#headline hgroup{
+	position: absolute;
+	top: 45%;
+	left: 10%;
+	color: #eee;
+
+}
+#headline h2{
+	font-size: .22rem;
+}
+#headline h3{
+	font-size: .16rem;
+}
+.list{
+	font-size: .16rem;
+	color: #666;
+	max-width: 6.4rem;
+	margin: .15rem auto;
+	padding: 0 .1rem;
+}
+.list h2{
+	font-size: .20rem;
+	border-bottom: .01rem dashed #999;
+	padding: 0 0 .15rem 0;
+}
+.information figure:after{
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+.information figure{
+	margin: .15rem 0 0 0;
+	position: relative;
+}
+.information figure img{
+	width: 50%;
+	float: left;
+}
+.information figure figcaption{
+	width: 48%;
+	float: right;
+}
+
+.information .title{
+	border: none;
+	padding: 0 0 .05rem 0;
+}
+.information  .small_title{
+	font-weight:normal;
+	padding: 0; 
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+}
+.information .price{
+	color: #f60;
+	position: absolute;
+	bottom: 0;
+}
+.information .price strong{
+	font-size: .26rem;
+}
+@media (min-width: 480px)and(max-width: 640px){
+	#tour h2{
+		font-size: .26rem;
+	}
+	#tour h3,#footer ,#tour figcaption,#tour .info{
+		font-size: .16rem;
+	}
+	
+}
+@media (max-width: 480px){
+	#tour h2{
+		font-size: .20rem;
+	}
+	#tour h3,#tour figcaption,#tour .info{
+		font-size: .14rem;
+	}
+	#footer {
+		font-size: .12rem;
+	}
+	#headline h2{
+		font-size: .20rem;
+	}
+	#headline h3{
+		font-size: .12rem;
+	}
+
+}
